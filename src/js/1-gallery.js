@@ -1,11 +1,11 @@
 // Описаний в документації
+import simpleLightbox from 'simplelightbox';
 import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 new SimpleLightbox('.some-element a', {
   captionsData: 'alt',
   captionDelay: 250,
-  download: false,
 });
 const images = [
   {
@@ -88,7 +88,10 @@ for (const { preview, original, description } of images) {
 </li>`;
   listGalary.insertAdjacentHTML('afterbegin', htmlFragment);
 }
-
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('show.simplelightbox', function (event) {
+  event.preventDefault();
+});
 // // console.log(htmlFragment);
 // function showConsole(event) {
 //   console.log(event.target);
