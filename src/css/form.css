@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+a,
+h1 {
+  font-family: Montserrat;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+/* 
+section{
+    display: inline-block;
+    text-align: start;
+} */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 16px;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  width: auto;
+  width: 95px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+button:hover {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #6c8cff;
+  border: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  text-align: left;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+input:hover {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+input:active {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px #000;
+}
+textarea {
+  display: flex;
+  width: 360px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #2e2f42;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+textarea:hover {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+textarea:active {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px #000;
+}
