@@ -11,11 +11,11 @@ if (savedData) {
   input.value = savedData.email;
   textarea.value = savedData.message;
 }
-form.addEventListener('input', eveyn => {
+form.addEventListener('input', () => {
   if (input.value.trim() !== '' || textarea.value.trim() !== '') {
     formData.email = input.value.trim();
     formData.message = textarea.value.trim();
-    localStorage.setItem(localStorageKey, JSON.stringify(formData));
+    localStorage.setItem(localStorageKey, JSON.stringify(formData).trim());
   }
 });
 form.addEventListener('submit', evt => {
