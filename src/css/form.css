@@ -77,6 +77,9 @@ section {
   text-align: left;
 }
 input {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   width: 360px;
   height: 40px;
@@ -109,6 +112,9 @@ input:active {
   border: 1px #000;
 }
 textarea {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   width: 360px;
   height: 80px;

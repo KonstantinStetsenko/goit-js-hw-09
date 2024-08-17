@@ -12,15 +12,15 @@ if (savedData) {
   textarea.value = savedData.message;
 }
 form.addEventListener('input', eveyn => {
-  if (input.value !== '' || textarea.value !== '') {
-    formData.email = input.value;
-    formData.message = textarea.value;
+  if (input.value.trim() !== '' || textarea.value.trim() !== '') {
+    formData.email = input.value.trim();
+    formData.message = textarea.value.trim();
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
   }
 });
 form.addEventListener('submit', evt => {
-  // formData.email = input.value;
-  // formData.message = textarea.value;
+  formData.email = input.value.trim();
+  formData.message = textarea.value.trim();
   // localStorage.setItem(localStorageKey, JSON.stringify(formData));
   evt.preventDefault();
 
